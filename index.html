@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script type="module" src="main.js" defer></script>
+    <title>Battleship</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="display-container">
+        <div class="display">
+          <div class="display-text-show" id="text">
+            Place your ships Captain.
+          </div>
+        </div>
+        <button class="restart-hidden" id="restart-button">Restart</button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="board-container">
+        <div class="player-board-container-active">
+          <div class="player-board"></div>
+          <button class="axis-button-active" id="axis-button">Axis: X</button>
+          <div class="board-title-hidden" id="board-title-friendly">
+            Friendly Waters
+          </div>
+        </div>
+        <div class="enemy-board-container-hidden" id="enemy-board-container">
+          <div class="enemy-board"></div>
+          <div class="board-title-active">Enemy Waters</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>

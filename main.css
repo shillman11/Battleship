@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: darkblue; */
+}
+
+.header {
+  margin-top: 25px;
+}
+
+.display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.display {
+  height: 100px;
+  /* width: 600px; */
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid black;
+  box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.66);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.display-text {
+  opacity: 0;
+  font-size: 30px;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.display-text-show {
+  opacity: 1;
+  font-size: 30px;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.board-container-hidden {
+  display: none;
+}
+
+.player-board-container-active,
+.enemy-board-container-active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.enemy-board-container-hidden,
+.player-board-container-hidden {
+  display: none;
+}
+
+.axis-button-active {
+  background-color: rgb(83, 89, 146);
+  color: white;
+  height: 50px;
+  width: 100px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.axis-button-hidden {
+  display: none;
+}
+
+.axis-button-active:hover {
+  cursor: pointer;
+  background-color: rgb(0, 187, 187);
+  transition: background-color 0.2s linear;
+}
+
+.restart-active {
+  background-color: rgb(83, 89, 146);
+  color: white;
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+}
+
+.restart-active:hover {
+  cursor: pointer;
+  background-color: rgb(0, 187, 187);
+  transition: background-color 0.2s linear;
+}
+
+.restart-hidden {
+  display: none;
+}
+
+.board-title-active {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.board-title-hidden {
+  display: none;
+}
+
+.player-board,
+.enemy-board {
+  /* height: 604px;
+  width: 604px; */
+  border: 1px solid black;
+  box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.66);
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+}
+
+.enemy-square:hover {
+  cursor: crosshair;
+  background-color: rgb(47, 255, 64);
+  transition: background-color 0.25s linear;
+}
+
+.player-square,
+.enemy-square {
+  height: 58px;
+  width: 58px;
+  border: 1px solid black;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.player-row,
+.enemy-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* .enemy-board {
+  height: 600px;
+  width: 600px;
+  border: 1px solid black;
+  box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.66);
+} */
+
+@media only screen and (max-width: 600px) {
+}
